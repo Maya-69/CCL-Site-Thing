@@ -5,38 +5,107 @@
   <title>EduLearn Landing Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e6f0ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container */
+    .container {
+      background-color: #fff;
+      padding: 60px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
-      padding: 40px;
-      background-color: #f0f8ff;
+      max-width: 600px;
+      width: 100%;
+      animation: fadeIn 1s ease forwards;
     }
+
+    /* Headline */
     h1 {
-      color: #333;
+      font-size: 2.5rem;
+      color: #0078d7;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
     }
+
+    /* Subtitle */
     p {
-      font-size: 18px;
-      color: #666;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      animation: slideUp 1.5s ease-out;
     }
+
+    /* Button */
     .btn {
       display: inline-block;
-      padding: 12px 25px;
+      padding: 14px 30px;
       background-color: #0078d7;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      animation: fadeInUp 2s ease-out;
     }
     .btn:hover {
       background-color: #005fa3;
+      transform: translateY(-3px);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to EduLearn!</h1>
-  <p>Explore our wide range of online courses and promotions.</p>
-  <a class="btn" href="courses.html">View Courses</a> <!-- Updated link here -->
+  <div class="container">
+    <h1>Welcome to EduLearn!</h1>
+    <p>Explore our wide range of online courses and promotions to boost your skills and career.</p>
+    <a class="btn" href="courses.html">View Courses</a>
+  </div>
 
 </body>
 </html>
