@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Courses - EduLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .course-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .course-card h2 {
+      color: #0078d7;
+    }
+    .course-card p {
+      font-size: 16px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0078d7;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Courses</h1>
+  
+  <div class="course-list">
+    <div class="course-card">
+      <h2>Web Development</h2>
+      <p>Learn the fundamentals of web development, including HTML, CSS, and JavaScript.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+    <div class="course-card">
+      <h2>Data Science</h2>
+      <p>Get hands-on experience in data analysis and machine learning with Python.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+    <div class="course-card">
+      <h2>Graphic Design</h2>
+      <p>Master the art of visual communication using tools like Adobe Illustrator and Photoshop.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+    <div class="course-card">
+      <h2>Digital Marketing</h2>
+      <p>Learn strategies for promoting products and services online through various channels.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+  </div>
+
+</body>
+</html>
